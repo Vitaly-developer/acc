@@ -1,0 +1,30 @@
+.subheader {
+    height: 193px;
+    padding: 57px 0 42px 0;
+    &__title {
+        font-weight: bold;
+        font-size: 42px;
+        margin-top: 30px;
+        line-height: 44px;
+    }
+    &__origin {
+        display: inline-block;
+        font-size: 13px;
+        &::after {
+            content: '/'
+        }
+        a {
+            color: #000;
+        }
+    }
+    &__current {
+        display: inline-block;
+        font-size: 13px;
+        color:#BCBCBC;
+    }
+    &__list {
+        padding: 0;
+        list-style-type: none; 
+    }
+
+}

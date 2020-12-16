@@ -1,0 +1,28 @@
+.requirements {
+    min-height: 568px;
+    background: #FFF6EC;
+    padding: 58px 0 65px;
+    &__item {
+        list-style-type: none; 
+        margin-bottom: 18px;
+    }
+    &__list {
+        display: flex;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    &__number {
+        flex: 0 0 35px;
+        max-width: 35px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-weight: normal;
+        font-size: 18px;
+        height: 35px;
+        border-radius: 100%;
+        background-color: #D2BEA8;;
+        margin: 5px 20px 0 0;
+    }
+}
