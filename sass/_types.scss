@@ -2,6 +2,16 @@
     min-height: 1445px;
     background: rgba(248, 248, 248, 0.5);
     padding: 50px 0 77px 0;
+    .col-6 {
+        padding-left: 30px;
+        border-right: 1px solid #D8D8D8;
+        &:last-child {
+            border: none;
+        }
+        &:first-child {
+            padding-left: 15px;
+        }
+    }
     &__type {
         display: flex;
     }
@@ -49,12 +59,6 @@
     }
     &__lists {
         display: flex;
-    }
-    &__block {
-        border-right: 1px solid #D8D8D8;
-        &:last-child {
-            border: none;
-        }
     }
     a {
         text-decoration: underline;
