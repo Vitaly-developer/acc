@@ -1,5 +1,27 @@
-@import "subheader";
-@import "types";
-@import "requirements";
-@import "base/buttons";
+* {
+  font-family: roboto, 'sans-serif';
+} 
+@import "blocks/subheader";
+@import "blocks/types";
+@import "blocks/requirements";
 @import "base/titles";
+@import "base/buttons";
+@import "blocks/stages";
+@import "blocks/know";
+@import "blocks/decision";
+@import "blocks/service";
+@import "blocks/programs";
+@import "blocks/registry";
+@import "blocks/conditions";
+@import "blocks/acr-side";
+
+.gutters-60 {
+    margin-right: -30px;
+    margin-left: -30px;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }

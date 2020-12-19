@@ -1,0 +1,25 @@
+.decision {
+    min-height: 595px;
+    padding: 60px 0 70px 0;
+    &__item {
+        position: relative;
+        margin-top: 30px;
+        list-style-type: none;
+        padding-left: 25px;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 3px;
+            content: '';
+            width: 8px;
+            height: 16px;
+            display: inline-block;
+            transform: rotate(45deg);
+            border-right: 4px solid #224291;
+            border-bottom: 4px solid #224291;
+        } 
+    }
+    &__list {
+        padding-left: 0;
+    }
+}

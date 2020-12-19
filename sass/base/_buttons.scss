@@ -1,0 +1,37 @@
+.button {
+    background: #54C728;
+    border-radius: 5px;
+    width: 253px;
+    height: 55px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    &_programs {
+        display: block;
+        margin: 0 auto;
+        width: 262px;
+        height: 62px;
+        background: #108AF1;
+        font-size: 20px;
+    }
+    &_requirements {
+        font-size: 16px;
+        margin-top: 24px;
+    }
+    &_service {
+        margin-top: 25px;
+        width: 182px;
+        height: 56px;
+    }
+    &_registry {
+        display: block;
+        margin: 0 auto;
+        background-color: #fff;
+        width: 347px;
+        height: 70px;
+        color: #242424;
+        border: 1px solid #000000;
+        font-weight: normal;
+    }
+}
