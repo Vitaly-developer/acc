@@ -1,0 +1,47 @@
+.stages {
+    min-height: 687px;
+    padding: 59px 0 75px 0;
+    &__stage {
+        position: relative;
+        display: flex;
+        &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 1px;
+            background: #224291; 
+            top: 40px;
+            bottom: 5px;
+            left: 17px;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &__number {
+        flex: 0 0 35px;
+        max-width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        background: #224291;
+        border-radius: 100%;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        margin-right: 24px;    
+    }
+    &__descr {
+        margin-bottom: 52px;
+    }
+    a {
+        text-decoration: underline;
+        color: #3289F0;
+    }
+    &__item {
+        margin-bottom: 37px;
+    }
+}

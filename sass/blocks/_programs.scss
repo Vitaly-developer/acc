@@ -1,0 +1,24 @@
+.programs {
+    min-height: 469px;
+    background: rgba(98, 161, 255, 0.1);
+    padding: 68px 0;
+    &__choice {
+        width: 324px;
+        height: 196px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        padding-top: 15px;
+    }
+    &__type {
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 20px;
+        margin: 0 0 25px 85px;
+    }
+    &__descr {
+        font-weight: normal;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}

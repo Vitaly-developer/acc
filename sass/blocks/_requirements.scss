@@ -1,0 +1,102 @@
+.requirements {
+    min-height: 568px;
+    background: #FFF6EC;
+    padding: 58px 0 65px;
+    &__descr {
+        list-style-type: none; 
+        margin-bottom: 18px;
+    }
+    &__item {
+        display: flex;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    &__number {
+        flex: 0 0 35px;
+        max-width: 35px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-weight: normal;
+        font-size: 18px;
+        height: 35px;
+        border-radius: 100%;
+        background-color: #D2BEA8;;
+        margin: 5px 20px 0 0;
+    }
+    &__form {
+        width: 325px;
+        min-height: 387px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px rgba(230, 225, 221, 0.8);
+        border-radius: 5px;
+        padding: 41px 40px 41px 32px;
+        margin: 58px 0 0 25px;
+    }
+    &__form-title {
+        font-weight: bold;
+        font-size: 17px;
+        margin-bottom: 19px;
+    }
+    &__input {
+        width: 253px;
+        height: 49px;
+        background: #F3F3F3;
+        border-radius: 5px;
+        border: none;
+        margin-top: 12px;
+        padding-left: 18px;
+    }
+    &__link {
+        color:#AAAAAA;
+        font-size: 10px;
+        text-decoration: underline;
+    }
+    &__check {
+        display: none;
+    }
+    &__checkmark {
+        background-color:  #F1F1F1;
+        display: block;
+        position: absolute;
+        height:15px;
+        width: 15px;
+        border: solid #F1F1F1 1px;
+        border-radius: 3px;
+        top: 0px;
+        left: 0px;
+        &::after {
+            position: absolute;
+            top: 1px;
+            left: 5px;
+            display: none;
+            content: ""; 
+            width: 5px;
+            height: 10px;
+            border: solid #FFF;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+}
+.requirements__label:hover .requirements__check+.requirements__checkmark {
+    background-color: #cfcfcc;
+    border: none;
+}
+
+.requirements__label .requirements__check:checked+.requirements__checkmark {
+    background-color: #54C728;
+    border: none;
+}
+.requirements__check:checked+.requirements__checkmark::after {
+    display: block;
+}
+.requirements__label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    color:#AAAAAA;
+    font-size: 10px;
+}   
+

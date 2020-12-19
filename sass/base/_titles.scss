@@ -1,6 +1,13 @@
 .title {
     font-weight: bold;
     font-size: 30px;
+    &__service {
+        margin-bottom: 59px;
+    }
+    &__programs {
+        text-align: center;
+        margin-bottom: 26px;
+    }
 }
 .subtitle {
     font-weight: bold;
@@ -10,5 +17,8 @@
     }
     &__requirements {
         margin-bottom: 33px;
+    }
+    &__service {
+        margin: 0 0 0 41px;
     }
 }
