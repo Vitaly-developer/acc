@@ -1,23 +1,47 @@
 .acr-side {
-    display: none;
     position: sticky;
     top: 100px;
-    margin-top: 35px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    max-width: 240px;
+    margin-left: auto;
+}
+.acr-side__wrap {
+    border: 1px solid #BDBDBD;
+    border-radius: 6px;
+    background: white;
+    overflow: hidden;
 }
 .acr-side__item {
     display: block;
     font-size: 16px;
     color: #4E5354;
-    padding: 8px 20px;
+    padding: 9px 20px;
+    background: white;
+    border-bottom: 1px solid #DFE7EB;
+    position: relative;
+    border-left: 6px solid transparent;
+    transition: all .2s linear;
+    text-decoration: none !important;
+    &:hover {
+        color: #000;
+        background-color: #f7f7f7;
+    }
+    &:first-child {
+        padding: 15px 20px 9px;
+    }
+    &:last-child {
+        border-bottom: none;
+        padding: 9px 20px 15px;
+    }
 }
 .acr-side__item.active {
-    background-image: linear-gradient(90deg, #c3c3c3 6px, transparent 6px);
+    border-left: 6px solid #BDBDBD;
 }
 .acr-side__modal {
     display: block;
     width: 100%;
-    background: #ec7986;
+    background: #FBAF20;
+    font-weight: bold;
     border-radius: 4px;
     color: #fff;
     text-align: center;
@@ -48,6 +72,7 @@
     background: transparent;
     font-weight: bold;
     color: #000;
+    background: #FFFFFF;
 }
 .acr-side__modal--outline:hover {
     border-color: #58CC56;

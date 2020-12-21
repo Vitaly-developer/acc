@@ -1,0 +1,94 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+.bg-full {
+    position: relative;
+    > * {
+        position: relative;
+    }
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100vw;
+        margin-left: -50vw;
+        background: #FFF6EC;
+        left: 50%;
+        @media (min-width: 992px) {
+            left: 457px;
+        }
+        @media (min-width: 1200px) {
+            left: 577px;
+        }
+    }
+}
+.bg-full.programs {
+    &::before {
+        background: #eef5ff;
+    }
+}
+.bg-full.types {
+    &::before {
+        background: #fbfbfb;
+    }
+}
+.bg-full.know {
+    &::after {
+        content: '';
+        background: url('../../img/calculator.png') no-repeat left center/cover;
+        width: 500px;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 60%;
+        position: absolute;
+        mix-blend-mode: overlay;
+    }
+    > * {
+        position: relative;
+        z-index: 1;
+    }
+}
+.bg-full.conditions {
+    @media (min-width: 768px) {
+        &::before {
+            width: 50vw;
+        }
+    }
+}
+.acr-page {
+    margin-bottom: 80px;
+    @media (max-width: 991px) {
+        overflow: hidden;
+    }
+}
+
+.dot-list {
+    padding: 0;
+    margin: 0;
+}
+.dot-list__item {
+    position: relative;
+    list-style-type: none; 
+    margin-bottom: 15px;
+    padding-left: 18px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background-color: #FBAF20;
+        margin-right: 60px;
+        top: 7px;
+        left: 0;
+    }
+}

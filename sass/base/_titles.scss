@@ -7,18 +7,15 @@
     &__programs {
         text-align: center;
         margin-bottom: 26px;
+        @media (max-width: 767px) {
+            text-align: left;
+        }
     }
 }
 .subtitle {
     font-weight: bold;
     font-size: 22px;
-    &__types {
-        margin-bottom: 12px;
-    }
     &__requirements {
         margin-bottom: 33px;
-    }
-    &__service {
-        margin: 0 0 0 41px;
     }
 }

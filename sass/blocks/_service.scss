@@ -1,21 +1,24 @@
 .service {
     min-height: 649px;
-    padding: 54px 0 79px 0;
+    padding: 60px 0 80px;
     border-top: 1px solid #D0D0D0;
+    .subtitle {
+        margin-bottom: 14px;
+    }
     &__item {
         position: relative;
-        width: 865px;
         min-height: 90px;
         border: 1px solid #D0D0D0;
         border-radius: 5px;
         margin-bottom: 20px;
+        overflow: hidden;
         &_green {
             background: rgba(84, 199, 40, 0.08);
-            padding: 44px 85px 37px 41px;
+            padding: 40px;
         }
         &_white {
             background: #fff;
-            padding: 31px 85px 37px 41px;
+            padding: 0 40px 40px 40px;
         }
     }
     &__toggle {
@@ -24,51 +27,42 @@
         font-size: 16px;
         font-weight: normal;
         top: 35px;
-        right: 50px;
+        right: 40px;
     }
-    &__list {
-        padding: 0;
-    }
-    &__list-item {
-        position: relative;
-        list-style-type: none; 
-        margin: 0 65px 18px 0;
-        padding-left: 18px;
-        &::before {
-        position: absolute;
-        content: '';
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        border-radius: 100%;
-        background-color: #FBAF20;
-        margin-right: 60px;
-        top: 8px;
-        left: 0;
-        }
-    }
-    &__attention {
-        position: absolute;
-        left: 60px;
-        top: 461px;
-    }
-    p { 
-        margin-top: 16px;
-    }
+   
     &__second {
         padding-left: 54px;
+        margin-top: 40px;
+        position: relative;
+        
+        &::before {
+            display: block;
+            width: 20px;
+            height: 20px;
+            content: '';
+            position: absolute;
+            left: 17px;
+            top: 6px;
+            background-image: url("data:image/svg+xml,%3Csvg width='19' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.429.714C4.223.714 0 4.937 0 10.143c0 5.205 4.223 9.428 9.429 9.428 5.205 0 9.428-4.223 9.428-9.428 0-5.206-4.223-9.429-9.428-9.429zM11 16.024c0 .22-.172.405-.38.405H8.261a.409.409 0 01-.405-.406v-2.332c0-.221.184-.405.405-.405h2.357c.21 0 .381.184.381.405v2.332zm-.025-4.224c-.012.172-.196.307-.417.307H8.287c-.233 0-.418-.135-.418-.307l-.208-7.624c0-.086.037-.172.122-.22a.473.473 0 01.295-.099h2.701c.11 0 .221.037.295.098.086.05.122.135.122.221l-.22 7.624z' fill='%23FF455B'/%3E%3C/svg%3E");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     }
 }
 .list-numbers {
     margin-top: 20px;
+    margin-bottom: 0;
     list-style-type: none;
     padding: 0;
     &__item {
         position: relative;
-        padding-left: 40px;
+        padding-left: 50px;
         font-weight: normal;
         font-size: 16px;
-        margin-bottom: 20px;
+        margin-bottom: 26px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     &__count {
         position: absolute;

@@ -1,0 +1,27 @@
+.accordion {
+    // background-color: #CFD8DC;
+    // color: #fff;
+    // cursor: pointer;
+    // padding: 16px;
+    // border: none;
+    // text-align: left;
+    // outline: none;
+    // font-size: 18px;
+    // transition: 0.5s;
+    cursor: pointer;
+    padding: 30px 40px;
+    .subtitle {
+        margin-bottom: 0 !important;
+    }
+}
+
+.accordion.active, :hover {
+}
+
+.panel {
+    color: #212121;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
