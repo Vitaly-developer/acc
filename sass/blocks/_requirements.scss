@@ -26,6 +26,12 @@
         border-radius: 100%;
         background-color: #D2BEA8;;
         margin: 5px 20px 0 0;
+        @media (max-width: 575px) {
+            flex: 0 0 21px;
+            max-width: 21px;
+            height: 21px;
+            font-size: 10px;
+        }  
     }
     &__form {
         background: #FFFFFF;

@@ -34,4 +34,10 @@
         border: 1px solid #000000;
         font-weight: normal;
     }
+    &_know {
+        @media (max-width: 575px) {
+            display: block;
+            margin: 0 auto;
+        } 
+    } 
 }
