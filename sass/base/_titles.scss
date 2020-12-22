@@ -15,7 +15,11 @@
 .subtitle {
     font-weight: bold;
     font-size: 22px;
+    line-height: 1.4;
     &__requirements {
         margin-bottom: 33px;
+    }
+    @media (max-width: 767px) {
+        font-size: 18px;
     }
 }

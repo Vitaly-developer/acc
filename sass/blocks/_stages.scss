@@ -8,13 +8,13 @@
             display: block;
             width: 1px;
             background: #224291; 
-            top: 50px;
+            top: 54px;
             bottom: 5px;
             left: 17px;
             @media (max-width: 767px) {
                 left: 12px;
                 top: 42px;
-                bottom: -5px;
+                bottom: -7px;
             } 
         }
         &:last-child {
@@ -24,16 +24,24 @@
         }
     }
     .accordion {
-        padding: 10px 50px;
+        padding: 10px 55px;
         position: relative;
+        cursor: default;
+        @media (max-width: 767px) {
+            padding-left: 35px;
+            cursor: pointer;
+        } 
     }
     .panel {
         position: relative;
+        @media (min-width: 768px) {
+            max-height: none !important;
+        } 
     }
     &__number {
         position: absolute;
         left: 0;
-        top: 6px;
+        top: 7px;
         width: 35px;
         display: flex;
         justify-content: center;
@@ -60,10 +68,11 @@
         color: #3289F0;
     }
     &__item {
-        padding-left: 50px;
+        padding-left: 55px;
         margin-bottom: 30px;
         @media (max-width: 767px) {
-           margin-bottom: 20px;
+            margin-bottom: 20px;
+            padding-left: 35px;
         } 
     }
 }

@@ -475,10 +475,17 @@
 .subtitle {
   font-weight: bold;
   font-size: 22px;
+  line-height: 1.4;
 }
 
 .subtitle__requirements {
   margin-bottom: 33px;
+}
+
+@media (max-width: 767px) {
+  .subtitle {
+    font-size: 18px;
+  }
 }
 
 .button {
@@ -537,7 +544,7 @@
   display: block;
   width: 1px;
   background: #224291;
-  top: 50px;
+  top: 54px;
   bottom: 5px;
   left: 17px;
 }
@@ -546,7 +553,7 @@
   .stages__stage::after {
     left: 12px;
     top: 42px;
-    bottom: -5px;
+    bottom: -7px;
   }
 }
 
@@ -555,18 +562,32 @@
 }
 
 .stages .accordion {
-  padding: 10px 50px;
+  padding: 10px 55px;
   position: relative;
+  cursor: default;
+}
+
+@media (max-width: 767px) {
+  .stages .accordion {
+    padding-left: 35px;
+    cursor: pointer;
+  }
 }
 
 .stages .panel {
   position: relative;
 }
 
+@media (min-width: 768px) {
+  .stages .panel {
+    max-height: none !important;
+  }
+}
+
 .stages__number {
   position: absolute;
   left: 0;
-  top: 6px;
+  top: 7px;
   width: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -605,13 +626,14 @@
 }
 
 .stages__item {
-  padding-left: 50px;
+  padding-left: 55px;
   margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
   .stages__item {
     margin-bottom: 20px;
+    padding-left: 35px;
   }
 }
 
@@ -691,6 +713,30 @@
   font-weight: normal;
   top: 35px;
   right: 40px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+@media (max-width: 1199px) {
+  .service__toggle {
+    font-size: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    top: 32px;
+    border: 2px solid #bcbcbc;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: 1199px) {
+  .service .active .service__toggle {
+    -webkit-transform: rotate(135deg) translate(5px, -10px);
+            transform: rotate(135deg) translate(5px, -10px);
+  }
 }
 
 .service__second {
@@ -751,6 +797,16 @@
   color: #FFFFFF;
   font-weight: bold;
   font-size: 18px;
+}
+
+.service__subtitle {
+  padding-right: 110px;
+}
+
+@media (max-width: 1199px) {
+  .service__subtitle {
+    padding-right: 40px;
+  }
 }
 
 .programs {

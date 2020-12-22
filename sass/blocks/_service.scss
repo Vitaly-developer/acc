@@ -28,8 +28,24 @@
         font-weight: normal;
         top: 35px;
         right: 40px;
+        transition: all .2s linear;
+        @media(max-width: 1199px) {
+            font-size: 0;
+            display: block;
+            width: 16px;
+            height: 16px;
+            top: 32px;
+            border: 2px solid #bcbcbc;
+            border-top: none;
+            border-right: none;
+            transform: rotate(-45deg);
+        }
     }
-   
+    .active .service__toggle {
+        @media(max-width: 1199px) {
+            transform: rotate(135deg) translate(5px, -10px);
+        }
+    }
     &__second {
         padding-left: 54px;
         margin-top: 40px;
@@ -78,5 +94,11 @@
         color: #FFFFFF;
         font-weight: bold;
         font-size: 18px;
+    }
+}
+.service__subtitle {
+    padding-right: 110px;
+    @media(max-width: 1199px) {
+        padding-right: 40px;
     }
 }
